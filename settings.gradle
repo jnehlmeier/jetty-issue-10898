@@ -1,0 +1,7 @@
+plugins {
+    // Apply the foojay-resolver plugin to allow automatic download of JDKs
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+}
+
+rootProject.name = 'jetty-12-logback-issue'
+include('simple-logback-extension', 'webapp-1', 'webapp-2', 'webapp-3')

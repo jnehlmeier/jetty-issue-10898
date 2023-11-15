@@ -1,0 +1,17 @@
+<configuration>
+
+    <statusListener class="example.logback.extension.CustomStatusListener">
+        <prefix>WEBAPP-LOGBACK--|--</prefix>
+    </statusListener>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>WEBAPP-LOGBACK--|--%d{HH:mm:ss.SSS} [%level] :%thread: \(%logger\) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>
