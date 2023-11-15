@@ -3,5 +3,5 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
 }
 
-rootProject.name = 'jetty-12-logback-issue'
+rootProject.name = 'jetty-issue-10898'
 include('simple-logback-extension', 'webapp-1', 'webapp-2', 'webapp-3')
